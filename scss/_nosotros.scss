@@ -1,0 +1,68 @@
+/*inician estilos de 'nosotros'*/
+
+.ajustesEncabezadoCarouselNosotros {
+    font-size: 2.1rem;
+    @include mediaQueries(768px) {
+        font-size: 1.7rem;
+    }
+}
+
+.ajustesParrafoCarouselNosotros {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    @include mediaQueries(768px) {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.contenedorSobreNosotros {
+    @extend .flexYSpaceBetween;
+    padding: 5rem;
+    iframe {
+        @include widthYHeight(560px, 315px);
+        @include mediaQueries(650px) {
+            @include widthYHeight(420px, 236px);
+        }
+        @include mediaQueries(443px) {
+            @include widthYHeight(336px, 189px);
+        }
+        @include mediaQueries(350px) {
+            @include widthYHeight(252px, 142px);
+        }
+    }
+    @include mediaQueries(1132px) {
+        @include fDColumnYAlignsCenter();
+    }
+}
+
+.contenedorSobreNosotros__texto {
+    padding-top: 2rem;
+    padding-right: 10rem;
+    font-size: $tamañoFuenteParrafoPrincipal;
+    color: map-get($map: $paletaProyecto, $key: 'fuenteParrafoPrincipal');
+    @include mediaQueries(1132px) {
+        @include paddingLeftYRight(7rem, 7rem);
+        padding-bottom: 3rem;
+    }
+    @include mediaQueries(650px) {
+        @include paddingLeftYRight(4rem, 4rem);
+    }
+    @include mediaQueries(443px) {
+        @include paddingLeftYRight(1rem, 1rem);
+    }
+    @include mediaQueries(350px) {
+        @include paddingLeftYRight(0.5rem, 0.5rem);
+    }
+}
+
+.contenedorSobreNosotros__encabezado {
+    font-size: $tamañoFuenteEncabezadoPrincipal;
+    padding-top: 3rem;
+    @include mediaQueries(1132px) {
+        padding-top: 0;
+    }
+}
+
+
+/*finalizan estilos de 'nosotros'*/

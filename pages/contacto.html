@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- inicio de head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- metas SEO -->
+    <meta name="description" content="Formulario de contacto de FlyHunt. Envia tu mensaje a la empresa.">
+    <meta name="keywords" content="trampas para moscas, cebos para moscas, moscas, control de plagas, trampa ecológica, trampa natural, tecnología agropecuaria">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- WOW css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- mi css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Titulo de la página -->
+    <title>Contacto - FlyHunt - Trampas ecologicas para moscas</title>
+    <!-- fin de head -->
+</head>
+
+<body>
+    <!-- arranca header con navbar de Bootstrap editada -->
+    <header>
+        <nav class="ajustesNavBarBootstrap navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../img/logo.png" alt="logo de FlyHunt - Trampas ecologicas para moscas">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="ajustesVinculosNavBarBootstrap nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ajustesVinculosNavBarBootstrap nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ajustesVinculosNavBarBootstrap nav-link" href="productos-y-uso.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ajustesVinculosNavBarBootstrap nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ajustesVinculosNavBarBootstrap nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- termina header con navbar de Bootstrap editada -->
+    <!-- inicia seccion principal pagina contacto -->
+    <main>
+        <!-- comienza la sección del formulario de contacto con su título y descripción -->
+        <section>
+            <article class="contenedorPrincipalFormulario">
+                <div class="contenedorPrincipalFormulario__cajaEncabezado">
+                    <h1 class="contenedorPrincipalFormulario__encabezado">Contacto</h1>
+                    <p class="contenedorPrincipalFormulario__texto">Escribinos, queremos conocerte y saber en qué te podemos ayudar. Esperamos tu mensaje y te responderemos vía correo electrónico a la brevedad</p>
+                </div>
+                <div class="contenedorPrincipalFormulario__cajaFormulario">
+                    <form action="error404.html">
+                        <div class="mb-5">
+                            <label for="nombre-apellido" class="form-label">Nombre y apellido:</label>
+                            <input type="text" class="form-control" id="nombre-apellido">
+                        </div>
+                        <div class="mb-5">
+                            <label for="correoElectronico" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correoElectronico" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu mail con nadie.</div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="ubicacion" class="form-label">¿De dónde sos?</label>
+                            <select class="ajustesSelectFormulario form-select" id="ubicacion">
+                              <option selected>Elegí entre estas opciones...</option>
+                              <option value="caba">CABA</option>
+                              <option value="bsas">Provincia de Buenos Aires</option>
+                              <option value="interior">Interior de Argentina</option>
+                              <option value="exterior">Pais exterior</option>
+                            </select>
+                        </div>
+                        <div class="mb-5">
+                            <label for="mensaje" class="form-label">Escribe tu mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <div class="mb-5 form-check">
+                            <input type="checkbox" class="ajustesCheckFormulario form-check-input" id="recibirNovedades">
+                            <label class="form-check-label" for="recibirNovedades">Quiero recibir novedades</label>
+                        </div>
+                        <button type="submit" class="btn ajustesBotonFormulario">Enviar</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <!-- finaliza la sección del formulario de contacto con su título y descripción -->
+
+
+        <!-- comienza seccion para mostrar mapa -->
+        <section class="contenedorMapa wow bounceInUp">
+            <article>
+                <h2 class="contenedorMapa__encabezado">Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.029779155979!2d-58.38758398504374!3d-34.603408480459485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac678504f45%3A0xf2519648a88ea112!2sTalcahuano%20446%2C%20C1013%20CABA!5e0!3m2!1ses-419!2sar!4v1655489127760!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+        <!-- finaliza seccion para mostrar mapa-->
+    </main>
+    <!-- finaliza seccion principal pagina contacto -->
+    <!-- arranca footer -->
+    <footer>
+        <div class="footer__texto">
+            <span>Seguinos en nuestras redes sociales</span>
+        </div>
+        <div>
+            <a href="https://facebook.com/flyhuntok" target="_blank">
+                <img src="../img/facebook.png" alt="acceso a facebook">
+            </a>
+            <a href="https://instagram.com/flyhuntok" target="_blank">
+                <img src="../img/instagram.png" alt="acceso a instagram">
+            </a>
+        </div>
+    </footer>
+    <!-- termina footer -->
+    <!-- Scripts de WOW -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

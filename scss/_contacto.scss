@@ -1,0 +1,129 @@
+/*inician estilos de 'contacto'*/
+
+.contenedorPrincipalFormulario {
+    @extend .flexYSpaceBetween;
+    @include paddingTopYBottom(2rem, 5rem);
+    @include mediaQueries(990px) {
+        @include fDColumnYAlignsCenter();
+        @include paddingLeftYRight(12rem, 12rem);
+        padding-top: 5rem;
+    }
+}
+
+.contenedorPrincipalFormulario__cajaEncabezado {
+    padding-top: 7rem;
+    @include paddingLeftYRight(15rem, 20rem);
+    @include mediaQueries(1132px) {
+        padding-right: 12rem;
+    }
+    @include mediaQueries(990px) {
+        @include paddingLeftYRight(0, 0);
+        padding-top: 0;
+    }
+}
+
+.contenedorPrincipalFormulario__encabezado {
+    @include fontSizeYWeight($tamañoFuenteEncabezadoPrincipal, $pesoFuenteEncabezadoPrincipal);
+    padding-bottom: 1rem;
+}
+
+.contenedorPrincipalFormulario__texto {
+    @include fontSizeYWeight($tamañoFuenteParrafoPrincipal, $pesoFuenteParrafoPrincipal);
+}
+
+.contenedorPrincipalFormulario__cajaFormulario {
+    @include fontSizeYWeight(1.4rem, 300);
+    padding-top: 4rem;
+    padding-right: 15rem;
+    label {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+    input {
+        margin-bottom: 0.7rem;
+        margin-top: 0.3rem;
+        border-width: 0.2rem;
+        border-color: map-get($map: $paletaProyecto, $key: 'amarilloBordesFormulario');
+    }
+    select {
+        border-width: 0.2rem;
+        border-color: map-get($map: $paletaProyecto, $key: 'amarilloBordesFormulario');
+    }
+    textarea {
+        display: block;
+        margin-bottom: 2rem;
+        width: 36rem;
+        border-width: 0.2rem;
+        border-color: map-get($map: $paletaProyecto, $key: 'amarilloBordesFormulario');
+        @include mediaQueries(443px) {
+            width: 25rem;
+        }
+    }
+    @media (max-width: 990px) {
+        @include paddingLeftYRight(0, 0);
+    }
+}
+
+.ajustesSelectFormulario {
+    font-size: .875em;
+}
+
+.ajustesCheckFormulario {
+    &:checked {
+        background-color: map-get($map: $paletaProyecto, $key: 'botonAmarillo');
+        border-color: map-get($map: $paletaProyecto, $key: 'botonAmarillo');
+    }
+}
+
+.ajustesBotonFormulario {
+    color: #ffffff;
+    width: 12rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: map-get($map: $paletaProyecto, $key: 'botonAmarillo');
+    border-color: map-get($map: $paletaProyecto, $key: 'botonAmarillo');
+    &:hover {
+        background-color: map-get($map: $paletaProyecto, $key: 'botonAmarilloHover');
+        border-color: map-get($map: $paletaProyecto, $key: 'botonAmarilloHover');
+        color: #ffffff;
+    }
+}
+
+.contenedorMapa {
+    text-align: center;
+    @include paddingTopYBottom(6rem, 5rem);
+    background-color: map-get($map: $paletaProyecto, $key: 'contenedorAmarillo');
+    iframe {
+        @include widthYHeight(800px, 400px);
+        @include mediaQueries(850px) {
+            @include widthYHeight(700px, 350px);
+        }
+        @include mediaQueries(768px) {
+            @include widthYHeight(600px, 300px);
+        }
+        @include mediaQueries(650px) {
+            @include widthYHeight(500px, 250px);
+        }
+        @include mediaQueries(514px) {
+            @include widthYHeight(400px, 400px);
+        }
+        @include mediaQueries(443px) {
+            @include widthYHeight(300px, 300px);
+        }
+        @include mediaQueries(350px) {
+            @include widthYHeight(270px, 270px);
+        }
+    }
+    @include mediaQueries(990px) {
+        padding-top: 5rem;
+    }
+}
+
+.contenedorMapa__encabezado {
+    @include fontSizeYWeight($tamañoFuenteEncabezadoSecundario, $pesoFuenteEncabezadoSecundario);
+    padding-bottom: 2rem;
+}
+
+
+/*finalizan estilos de 'contacto'*/

@@ -1,0 +1,99 @@
+/*inician estilos de 'error404'*/
+
+.contenedorGeneralError404 {
+    @extend .flexYSpaceBetween;
+    background-color: map-get($map: $paletaProyecto, $key: 'contenedorAmarillo');
+    width: 100%;
+    @include mediaQueries(768px) {
+        @include fDColumnYAlignsCenter();
+    }
+    div {
+        width: 50%;
+        @include mediaQueries(768px) {
+            width: 100%;
+        }
+    }
+}
+
+.contenedorGeneralError404__explicacion {
+    padding-left: 8rem;
+    @include paddingTopYBottom(12rem, 10rem);
+    @include mediaQueries(768px) {
+        padding-left: 0;
+        @include paddingTopYBottom(2rem, 2rem);
+    }
+    h1 {
+        font-size: 12rem;
+        font-weight: 900;
+        @include mediaQueries(1243px) {
+            font-size: 10rem;
+        }
+        @include mediaQueries(1062px) {
+            font-size: 8rem;
+        }
+        @include mediaQueries(882px) {
+            font-size: 6rem;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-style: italic;
+        width: 60%;
+        margin-bottom: 6rem;
+        @include mediaQueries(1243px) {
+            width: 70%;
+        }
+        @include mediaQueries(1062px) {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        @include mediaQueries(768px) {
+            width: 100%;
+            @include paddingLeftYRight(2rem, 2rem);
+        }
+    }
+}
+
+.ajustesBotonError404 {
+    width: 30rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.5rem;
+    background-color: map-get($map: $paletaProyecto, $key: 'botonAmarilloHover');
+    border-color: map-get($map: $paletaProyecto, $key: 'botonAmarilloHover');
+    color: #ffffff;
+    &:hover {
+        background-color: map-get($map: $paletaProyecto, $key: 'botonAmarillo');
+        border-color: map-get($map: $paletaProyecto, $key: 'botonAmarillo');
+        color: #ffffff;
+    }
+    @include mediaQueries(1062px) {
+        padding: 1rem;
+        width: 25rem;
+    }
+}
+
+.contenedorGeneralError404__imagen {
+    padding-top: 19rem;
+    text-align: center;
+    @include mediaQueries(1395px) {
+        padding-top: 23rem;
+    }
+    @include mediaQueries(1062px) {
+        padding-top: 20rem;
+    }
+    @include mediaQueries(768px) {
+        padding-top: 0;
+    }
+    img {
+        border-radius: 3rem;
+        width: 70%;
+        @include mediaQueries(768px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+/*finalizan estilos de 'error404'*/

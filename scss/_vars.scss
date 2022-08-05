@@ -1,0 +1,10 @@
+//tipografias en variables
+$tamañoFuenteEncabezadoPrincipal:2.5rem;
+$pesoFuenteEncabezadoPrincipal:500;
+$tamañoFuenteParrafoPrincipal:1.5rem;
+$pesoFuenteParrafoPrincipal:400;
+$tamañoFuenteEncabezadoSecundario:2rem;
+$pesoFuenteEncabezadoSecundario:500;
+$tamañoFuenteParrafoSecundario:1.3rem;
+//colores en variable de tipo map
+$paletaProyecto:( 'fuenteParrafoPrincipal': rgb(56, 56, 56), 'contenedorAmarillo': rgba(233, 233, 13, 0.893), 'fondoAcordionApretado': #ffe65469, 'fuenteAcordionApretado': #c1ae43de, 'botonAmarillo':#DEC014, 'botonAmarilloHover': #af960d, 'botonEnviarImagenGaleria': rgb(52, 52, 52), 'amarilloBordesFormulario': rgba(173, 176, 2, 0.9));

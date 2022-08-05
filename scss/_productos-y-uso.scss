@@ -1,0 +1,169 @@
+/*inician estilos de 'productos-y-uso'*/
+
+.uso {
+    @extend .flexYSpaceBetween;
+    @include paddingTopYBottom(6rem, 6rem);
+    background-color: map-get($map: $paletaProyecto, $key: 'contenedorAmarillo');
+    @include mediaQueries(1262px) {
+        @include fDColumnYAlignsCenter();
+    }
+}
+
+.uso__contenedorEncabezado {
+    width: 50%;
+    padding-left: 16rem;
+    @include mediaQueries(1262px) {
+        width: 70%;
+        padding-left: 0;
+    }
+    img {
+        @include widthYHeight(384px, 280px);
+        @include mediaQueries(548px) {
+            @include widthYHeight(307px, 224px);
+        }
+        @include mediaQueries(443px) {
+            @include widthYHeight(250px, 182px);
+        }
+        @include mediaQueries(350px) {
+            @include widthYHeight(211px, 154px);
+        }
+    }
+}
+
+.uso__encabezado {
+    font-size: $tamañoFuenteEncabezadoSecundario;
+    padding-bottom: 1rem;
+}
+
+.uso__texto {
+    width: 55rem;
+    margin-bottom: 2rem;
+    color: map-get($map: $paletaProyecto, $key: 'fuenteParrafoPrincipal');
+    font-size: $tamañoFuenteParrafoPrincipal;
+    @include mediaQueries(1262px) {
+        width: auto;
+    }
+}
+
+.uso__contenedorRecomendaciones {
+    width: 50%;
+    padding-top: 5rem;
+    @include paddingLeftYRight(8rem, 12rem);
+    @include mediaQueries(1262px) {
+        width: 70%;
+        padding-top: 3rem;
+        @include paddingLeftYRight(0, 0);
+    }
+    ol {
+        width: 70%;
+        @include fontSizeYWeight(1.3rem, 700);
+        @include mediaQueries(1262px) {
+            width: auto;
+            @include paddingLeftYRight(5rem, 5rem);
+        }
+        @include mediaQueries(350px) {
+            @include paddingLeftYRight(2rem, 2rem);
+        }
+        li {
+            @include paddingTopYBottom(1.6rem, 1.6rem);
+            p {
+                padding-top: 0.4rem;
+                @include fontSizeYWeight(1.4rem, 400);
+            }
+        }
+    }
+}
+
+.tipografiaAcordionParrafos {
+    font-size: 1.3rem;
+}
+
+.tipografiaAcordionTitulos {
+    font-size: 1.4rem;
+}
+
+.accordion-button {
+    &:not(.collapsed) {
+        background-color: map-get($map: $paletaProyecto, $key: 'fondoAcordionApretado');
+        color: map-get($map: $paletaProyecto, $key: 'fuenteAcordionApretado');
+    }
+}
+
+.productos {
+    @include paddingTopYBottom(4rem, 4rem);
+    text-align: center;
+}
+
+.productos__encabezado {
+    font-size: $tamañoFuenteEncabezadoPrincipal;
+    padding-bottom: 1rem;
+}
+
+.productos__texto {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    @include mediaQueries(548px) {
+        @include paddingLeftYRight(5rem, 5rem);
+    }
+}
+
+.contenedorProductos {
+    @extend .flexYSpaceBetween;
+    flex-wrap: wrap;
+    @include paddingLeftYRight(1rem, 1rem);
+    @include mediaQueries(514px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    img {
+        @include widthYHeight(150px, 150px);
+    }
+    h2 {
+        @include fontSizeYWeight(1.7rem, 500);
+        margin-top: 1rem;
+        height: 2rem;
+        @include mediaQueries(1262px) {
+            height: 3rem;
+        }
+    }
+    h3 {
+        @include fontSizeYWeight(1.5rem, 900);
+        font-style: italic;
+        padding-top: 1rem;
+        @include mediaQueries(514px) {
+            padding-top: 0.5rem;
+        }
+    }
+    p {
+        @include fontSizeYWeight(1.3rem, 400);
+        @include paddingLeftYRight(5rem, 5rem);
+        margin-top: 1rem;
+        font-style: normal;
+        height: 4rem;
+        @include mediaQueries(1262px) {
+            height: 6rem;
+        }
+        @include mediaQueries(514px) {
+            height: 5rem;
+        }
+    }
+}
+
+.contenedorProductos__item {
+    width: 25%;
+    @include paddingTopYBottom(3rem, 3rem);
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.05, 1.05);
+    }
+    @include mediaQueries(990px) {
+        width: 50%;
+    }
+    @include mediaQueries(514px) {
+        width: 100%;
+    }
+}
+
+
+/*finalizan estilos de 'productos-y-uso'*/
